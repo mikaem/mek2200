@@ -1,0 +1,18 @@
+TITLE: MEK2200 Noen ekstra problemer
+#AUTHOR: Mikael Mortensen Email:mikaem@math.uio.no
+DATE: today
+
+!split
+===== Kapittel 1 =====
+
+Gitt to vektorer $\bm{a}=(a_1, a_2, a_3)$ og $\bm{b}=(b_1, b_2, b_3)$. Beskriv med både vektor, indeks og dyadeform
+
+  o Indre productet mellom $\bm{a}$ og $\bm{b}$
+  o Ytre productet mellom $\bm{a}$ og $\bm{b}$
+  o Divergensen av $\bm{a}$
+  o Curlen av $\bm{a}$
+  o Kryss produktet mellom $\bm{a}$ og $\bm{b}$
+  o Gradienten av $\bm{a}$
+
+I siste oppgave kan du gå ut ifra at gradienten av $\bm{a}$ kan beskrives som ytreproduktet mellom $\nabla$ og $\bm{a}$, dvs, $\nabla \bm{a}$ 
+
