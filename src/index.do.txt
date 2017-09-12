@@ -16,3 +16,4 @@ Gitt to vektorer $\bm{a}=(a_1, a_2, a_3)$ og $\bm{b}=(b_1, b_2, b_3)$. Beskriv m
 
 I siste oppgave kan du gå ut ifra at gradienten av $\bm{a}$ kan beskrives som ytreproduktet mellom $\nabla$ og $\bm{a}$, dvs, $\nabla \bm{a}$ 
 
+Hvilken rank har resultatet i hver deloppgave? 
