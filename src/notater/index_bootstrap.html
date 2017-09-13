@@ -146,7 +146,7 @@ $$
 <center><b>Department of Mathematics, University of Oslo.</b></center>
 <br>
 <p>
-<center><h4>Sep 12, 2017</h4></center> <!-- date -->
+<center><h4>Sep 13, 2017</h4></center> <!-- date -->
 <br>
 <p>
 <b>Summary.</b> <p>
@@ -171,13 +171,13 @@ coordinate system, and many different coordinate systems can be used to describe
 the same vector. A tensor is often used when speaking of fields with higher
 order than vectors, even though a vector can be considered a tensor of order
 one, and a scalar a tensor of order 0. In general a tensor is a field whose
-components are represented through a number of indices, where the number
-determines its order, and that is invariant in form after a transformation of
+components are represented through a number of indices (the number of indices
+determines its order), and that is invariant in form after a transformation of
 the coordinate system.
 
 <p>
 Introducing a coordinate system through unit vectors \( \boldsymbol{i}_1, \boldsymbol{i}_2 \) and
-\( \boldsymbol{i}_3 \) and an origin \( (0,0,0) \), a vector field may be represented as
+\( \boldsymbol{i}_3 \), a vector field may be represented as
 $$
 \begin{equation} 
 \boldsymbol{u} = u_1 \boldsymbol{i}_1 + u_2\boldsymbol{i}_2 + u_3
@@ -187,9 +187,9 @@ $$
 $$
 
 <p>
-For a Cartesian coordinate system the unit vectors are \( \bs{i}_1 = (1, 0, 0), \bs{i}_1=(0, 1, 0) \) and
-\( \bs{i}_3=(0, 0, 1) \). If nothing is stated explicitly about the coordinate
-system, then it is safe to assume that it is Cartesian.
+A Cartesian coordinate system is often define with unit vectors \( \bs{i}_1 = (1, 0, 0), \bs{i}_1=(0, 1, 0) \) and
+\( \bs{i}_3=(0, 0, 1) \), with origin \( (0,0,0) \) defined as where the three vectors meet. If nothing is stated explicitly about the coordinate
+system, then it is safe to assume that this is the coordinate system in use.
 
 <p>
 A vector is sometimes denoted simply as
@@ -216,18 +216,17 @@ represent a vector. Equally common are \( \overrightarrow{u}, \underline{u},
 type.
 
 <p>
-The notation used in \eqref{eq:u_vec}, without explicitly stating the unit
+The notation used in \eqref{eq:u_vec}, boldface without explicitly stating the unit
 vectors, is usually referred to as vector notation, but sometimes it is also called
 <em>symbolic</em>, <em>absolute</em>, <em>invariant</em> or <em>direct</em> notation. We will here stick
 with vector notation.
 
 <p>
-In notation \eqref{eq:u_vec2} the unit vectors \( \boldsymbol{i}_1, \boldsymbol{i}_2 \) and \( \boldsymbol{i}_3 \) 
-are explicitly included as well as the indices. For this
-reason the notation is often referred to as index notation, or similarly as
-<em>suffix</em>, <em>indical</em> or <em>subscript</em> notation. The expression is rather long and
-for this reason there is a simplified version that is using the summation
-convention
+In the notation on the right hand side of \eqref{eq:u_vec2} the unit vectors \( \boldsymbol{i}_1, \boldsymbol{i}_2 \) and \( \boldsymbol{i}_3 \) 
+are explicitly included as well as the components, and this
+notation is often referred to as component form. The expressions on component
+form are rather long, though, and this motivated a simplified version that is
+using the <em>summation convention</em>
 
 $$
 \begin{equation} \boldsymbol{u} = u_i \boldsymbol{i}_i.  
@@ -242,8 +241,21 @@ convention. The result of summing the index \( i \) from \( 1 \) to \( 3 \) is o
 exactly the same as seen in Eq. \eqref{eq:u_vec2}.
 
 <p>
-Note that with index notation \( u_i \) is used to represent <em>component</em> i of the
-vector \( \boldsymbol{u} \). Papers or books that are primarily using index
+Using the component form without explicitly stating the basis vectors leads to
+the very popular index notation. With the index notation (or <em>suffix</em>, <em>indical</em>
+or <em>subscript</em> notation) expressions are written on component form and we use
+simply \( u_i \) to refer to <em>component</em> i of the
+vector \( \boldsymbol{u} \). The index form is used with the summation convention,
+such that, for example, the dot product becomes
+
+$$
+\begin{equation*}
+\bs{u} \cdot \bs{v} = u_i v_i.
+\end{equation*}
+$$
+
+<p>
+Papers or books that are primarily using index
 notation, usually also use the additional vector notation to represent the
 entire vector, when this is deemed necessary. Furthermore, the index notation
 usually skips the unit vectors, something that is made clear in the next
