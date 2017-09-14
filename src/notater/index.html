@@ -497,7 +497,11 @@ spatial derivative becomes the <em>last</em> index in the resulting tensor, wher
 \eqref{eq:nabla_1} approach, the spatial derivative becomes the <em>first</em>
 index of the resulting tensor. For the gradient of a scalar the first and last
 index is the same, so there is no difference. The section <a href="#sec:grad_vector">The gradient of a vector</a> shows
-\eqref{eq:nabla_grad} applied to a vector.
+\eqref{eq:nabla_grad} applied to a vector. Note that it doesn't matter that index
+\( i \) is used in \eqref{eq:nabla_grad}, it is still the last index of the resulting
+tensor due to the outer product. That is, for tensor \( \partial u_j /\partial x_i \bs{i}_{j} \otimes
+\bs{i}_{i} \), index \( j \) represents row and index \( i \) column due to the placement in
+the outer product \( \bs{i}_j \otimes \bs{i}_i \).
 
 <p>
 <!-- For a curvelinear -->
