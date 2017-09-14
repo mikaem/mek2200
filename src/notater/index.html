@@ -98,7 +98,7 @@ $$
 <center><b>Department of Mathematics, University of Oslo.</b></center>
 <br>
 <p>
-<center><h4>Sep 13, 2017</h4></center> <!-- date -->
+<center><h4>Sep 14, 2017</h4></center> <!-- date -->
 <br>
 <p>
 <b>Summary.</b> <p>
@@ -206,9 +206,7 @@ $$
 <p>
 Papers or books that are primarily using index
 notation, usually also use the additional vector notation to represent the
-entire vector, when this is deemed necessary. Furthermore, the index notation
-usually skips the unit vectors, something that is made clear in the next
-section.
+entire vector, when this is deemed necessary.
 
 <p>
 Note also that the index notation without explicit use of basis vectors is only valid
@@ -364,8 +362,7 @@ $$
 $$
 
 <p>
-The final \( \bs{i}_i \) is redundant with index notation and it is more common to use the
-component form
+The final \( \bs{i}_i \) is redundant with index notation, where it is written as
 
 $$
 a_i = \varepsilon_{ijk} u_j v_k, 
@@ -397,7 +394,7 @@ $$
 Evidently, the simplest approach is to take the lack of a dot as representing an
 outer product, as seen in \eqref{eq:outer2}. The indices and unit vectors indicate the components location in
 a matrix. The first and second index, i.e., \( i \) and \( j \), represent the matrix's
-row and column, respectively.  
+rows and columns, respectively: 
 
 $$
 \begin{equation} 
@@ -415,39 +412,24 @@ $$
 The gradient is the only operation that increases the order when applied to a
 tensor. When applied to a zero'th-order scalar, the result is a vector of order
 one. We define the gradient by considering infinitesimal changes in the field
-\( f \) along direction \( \boldsymbol{dx} \)
+\( f \) along a direction vector \( \boldsymbol{dx} \)
 
 $$
-\begin{equation} df = \text{grad} \, f \cdot \boldsymbol{dx}. 
-\label{_auto18}
+\begin{equation} 
+df = \text{grad} \, f \cdot \boldsymbol{dx}. \label{eq:gradf} 
 \end{equation} 
 $$
 
 <p>
-In a Cartesian coordinate system this can be written as either one of
+In a Cartesian coordinate system the gradient can be written as
 
-$$
-\begin{align}
-df &= \nabla f \cdot \bs{dx}, 
-\label{_auto19}\\ 
-df &= \frac{\partial f}{\partial x_i} dx_i, 
-\label{_auto20}\\
-df &=  \bs{i}_i \frac{\partial f}{\partial x_i} \cdot \bs{i}_j dx_j =
-\frac{\partial f}{\partial x_i}dx_j \bs{i}_i  \cdot \bs{i}_j = \frac{\partial
-f}{\partial x_i} dx_i,
-\label{_auto21}
-\end{align}
-$$
-
-<p>
-and we likewise have that the gradient can be written as
 $$
 \begin{align}
 \text{grad}\, f &= \nabla f , 
-\label{_auto22}\\ 
+\label{_auto18}\\ 
 \text{grad}\, f &= \bs{i}_i \frac{\partial f}{\partial x_i}, \label{eq:gradf_2}\\
 (\text{grad}\, f)_i &= \frac{\partial f}{\partial x_i}. \label{eq:gradf_3} \\
-\label{_auto23}
+\label{_auto19}
 \end{align}
 $$
 
@@ -456,17 +438,33 @@ only the first, \( \text{grad} \, f = \nabla f \), is valid for a general coordi
 system. The other two are valid for a Cartesian coordinate system. Equation
 \eqref{eq:gradf_2} requires additional scaling factors to be valid for
 curvilinear coordinate systems, whereas the index notation in \eqref{eq:gradf_3}
-never can be used for any other coordinate system than the Cartesian.
+never can be used for any other coordinate system than a Cartesian.
+
+<p>
+With these notations for the gradient we have for Eq. \eqref{eq:gradf}
+
+$$
+\begin{align}
+df &= \nabla f \cdot \bs{dx}, 
+\label{_auto20}\\ 
+df &= \frac{\partial f}{\partial x_i} dx_i, 
+\label{_auto21}\\
+df &=  \bs{i}_i \frac{\partial f}{\partial x_i} \cdot \bs{i}_j dx_j =
+\frac{\partial f}{\partial x_i}dx_j \bs{i}_i  \cdot \bs{i}_j = \frac{\partial
+f}{\partial x_i} dx_i.
+\label{_auto22}
+\end{align}
+$$
 
 <h3 id="___sec7">The \( \nabla \) operator </h3>
 
 <p>
 The nabla operator \( \nabla \) plays a central role in the mathematical description
 of fundamental theorems, like the principles for conservation of mass, and
-the balance of momentum, which is Newton's second law applied to fluids.
+the balance of momentum.
 
 <p>
-There are basically two directions taken for the mathematical nabla operator. One direction
+There are basically two directions taken for the mathematical nabla operator. One
 uses it straightforward as a vector, and the other uses it as an operator. This
 will become evident in Secs. <a href="#sec:grad_vector">The gradient of a vector</a> and <a href="#sec:div_tensor">The divergence of a tensor</a> when
 nabla is used to describe the gradient of a vector and the divergence of a
@@ -490,15 +488,16 @@ but as
 $$
 \begin{equation}
 \nabla = \frac{\partial (\cdot)}{\partial x_i} \otimes \bs{i}_i,
-\label{_auto24}
+\label{eq:nabla_grad}
 \end{equation}
 $$
 
 when applied to higher order tensors \( (\cdot) \). With this latter approach, the
-spatial derivative becomes the last index in the resulting tensor, whereas with the
+spatial derivative becomes the <em>last</em> index in the resulting tensor, whereas with the
 \eqref{eq:nabla_1} approach, the spatial derivative becomes the <em>first</em>
 index of the resulting tensor. For the gradient of a scalar the first and last
-index is the same, so there is no difference.
+index is the same, so there is no difference. The section <a href="#sec:grad_vector">The gradient of a vector</a> shows
+\eqref{eq:nabla_grad} applied to a vector.
 
 <p>
 <!-- For a curvelinear -->
@@ -517,7 +516,7 @@ The divergence of a vector field \( \bs{u} \) is defined as the surface integral
 $$
 \begin{equation}
 \text{div}\, \bs{u} = \lim_{\delta V \rightarrow 0} \frac{1}{\delta
-V}\oint_{\delta S} \bs{u} \cdot \bs{n} ds \label{eq:divu}
+V}\oint_{\delta S} \bs{u} \cdot \bs{n} ds, \label{eq:divu}
 \end{equation}
 $$
 
@@ -528,8 +527,8 @@ nabla and the vector \( \bs{u} \), which can be written as either one of
 $$
 \begin{equation}
  \nabla \cdot \bs{u}, \quad \frac{\partial u_i}{\partial x_i}, \quad \bs{i}_i
-\frac{\partial }{\partial x_i} \cdot u_j \bs{i}_j
-\label{_auto25}
+\frac{\partial }{\partial x_i} \cdot u_j \bs{i}_j.
+\label{_auto23}
 \end{equation}
 $$
 
@@ -541,18 +540,17 @@ and in general
 
 $$
 \begin{equation}
-P_{ij} \ne P_{ji} \quad \text{or} \quad \bs{P} \ne \bs{P}^T.
-\label{_auto26}
+P_{ij} \ne P_{ji} \quad \text{or} \quad \bs{P} \ne \bs{P}^T,
+\label{_auto24}
 \end{equation}
 $$
 
-<p>
-Or, perhaps more evident
+for a non-symmetric tensor. Perhaps more evident
 
 $$
 \begin{equation}
 \frac{\partial u_i}{\partial x_j} \ne \frac{\partial u_j}{\partial x_i}.
-\label{_auto27}
+\label{_auto25}
 \end{equation}
 $$
 
@@ -568,13 +566,13 @@ $$
 
 <p>
 then the spatial derivative must be represented in second index (the columns) of the tensor,
-and we get 
+and we get after applying \eqref{eq:nabla_grad} 
 
 $$
 \begin{align}
 \text{grad}\, \bs{u} &= \frac{\partial u_i \bs{i}_i}{\partial x_j} \otimes
 \bs{i}_j, 
-\label{_auto28}\\
+\label{_auto26}\\
   &=  \frac{\partial u_i}{\partial x_j} \bs{i}_i \otimes \bs{i}_j,
 \label{eq:gradu_2}
 \end{align}
@@ -585,7 +583,7 @@ or similarily
 $$
 \begin{equation}
 \text{grad}\, \bs{u} = \frac{\partial u_i}{\partial x_j}.
-\label{_auto29}
+\label{_auto27}
 \end{equation}
 $$
 
@@ -605,43 +603,47 @@ operator \( \nabla \) and the vector \( \bs{u} \) is
 $$
 \begin{align}
   \nabla \otimes \bs{u}  &= \bs{i}_i \frac{\partial }{\partial x_i} \otimes u_j \bs{i}_j 
-\label{_auto30}\\
+\label{_auto28}\\
    & = \frac{\partial u_j}{\partial x_i} \bs{i}_i \otimes \bs{i}_j,
 \label{eq:graduT}
 \end{align}
 $$
 
-which is the transpose of Eq. \eqref{eq:gradu_2}. Equation \eqref{eq:graduT}  may
+which is the transpose of Eq. \eqref{eq:gradu_2}. Note that Eq. \eqref{eq:graduT}  may
 also be written as
 
 $$
 \begin{equation}
- \nabla \bs{u} \quad \text{or} \quad \frac{\partial u_j}{\partial x_i}.
-\label{_auto31}
+ \nabla \bs{u} \quad \text{or} \quad \frac{\partial u_j}{\partial x_i},
+\label{_auto29}
 \end{equation} 
 $$
 
 <p>
-Note that either style of writing is correct in itself, and as long as it is
+and there is no way of knowing whether \( \nabla \bs{u} \) represents \( \partial u_i /\partial
+x_j \) or \( \partial u_j /\partial x_i \) unless the author has clarified which
+notation that is in use. Note that either style of writing is correct in itself, and as long as it is
 made clear which definitions are being used, then there can be no confusion.
+
+<p>
 One term that is often incorrect in academic papers is the nonlinear convection
 vector
 
 $$
 \begin{equation}
 u_j \frac{\partial u_i}{\partial x_j}.
-\label{_auto32}
+\label{_auto30}
 \end{equation}
 $$
 
 <p>
-Here, if we accept the latter definition, with \( \nabla \bs{u} =
+Here, if we accept the definition with \( \nabla \bs{u} =
 \partial u_j / \partial x_i \), then we can write this as
 
 $$
 \begin{equation}
 \bs{u} \cdot \nabla \bs{u}.
-\label{_auto33}
+\label{_auto31}
 \end{equation}
 $$
 
@@ -650,10 +652,13 @@ However, if we choose to use the definition \( \nabla \bs{u} = \partial u_i / \p
 then one must write
 $$
 \begin{equation}
- \nabla \bs{u} \cdot \bs{u}.
-\label{_auto34}
+ \nabla \bs{u} \cdot \bs{u},
+\label{_auto32}
 \end{equation}
 $$
+
+<p>
+which is very rarely seen in any academic papers or books.
 
 <p>
 One common way to avoid any confusion is to define the convection operator
@@ -662,7 +667,7 @@ One common way to avoid any confusion is to define the convection operator
 $$
 \begin{equation}
 \bs{u} \cdot \nabla = u_i \frac{\partial }{\partial x_i},
-\label{_auto35}
+\label{_auto33}
 \end{equation}
 $$
 
@@ -671,10 +676,13 @@ and then write the nonlinear convection term as
 
 $$
 \begin{equation}
-(\bs{u} \cdot \nabla) \bs{u}.
-\label{_auto36}
+(\bs{u} \cdot \nabla) \,\bs{u}.
+\label{_auto34}
 \end{equation}
 $$
+
+<p>
+This is the preferred notation used by the current author.
 
 <h3 id="sec:div_tensor">The divergence of a tensor</h3>
 
@@ -694,7 +702,7 @@ then we have that the dot product of the nabla vector and \( P \)
 $$
 \begin{equation}
 \nabla \cdot \bs{P} = \frac{\partial P_{ij}}{\partial x_i},
-\label{_auto37}
+\label{_auto35}
 \end{equation}
 $$
 
@@ -707,9 +715,9 @@ $$
 \begin{align}
 \nabla \cdot \bs{P} &= \frac{\partial P_{ij} \bs{i}_i \otimes \bs{i}_j}{\partial
 x_k} \cdot \bs{i}_k, 
-\label{_auto38}\\
+\label{_auto36}\\
  &= \frac{\partial P_{ij} }{\partial x_j}.
-\label{_auto39}
+\label{_auto37}
 \end{align}
 $$
 
