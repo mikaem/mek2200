@@ -258,7 +258,7 @@ $$
 $$
 
 <p>
-To show that this agrees with unity vectors
+To show that this agrees with basis vector notation, we get
 
 $$
 \begin{align} \alpha &= \sum_{i=1}^3 u_i\boldsymbol{i}_i \cdot \sum_{j=1}^3
@@ -266,7 +266,7 @@ v_j \boldsymbol{i}_j,
 \label{_auto7}\\ 
 &= \sum_{i=1}^3\sum_{j=1}^3 u_iv_j \boldsymbol{i}_i \cdot \boldsymbol{i}_j,  
 \label{_auto8}\\ 
-&=  u_1v_1 + u_2 v_2 + u_3v_3 
+&=  u_1v_1 + u_2 v_2 + u_3v_3.
 \label{_auto9}
 \end{align} 
 $$
@@ -331,7 +331,7 @@ $$
 $$
 
 <p>
-With index notation the cross product may be defined using the <a href="https://en.wikipedia.org/wiki/Levi-Civita_symbol" target="_self">Levi-Civita</a> symbol
+With index or basis vector notation the cross product may be defined using the <a href="https://en.wikipedia.org/wiki/Levi-Civita_symbol" target="_self">Levi-Civita</a> symbol
 
 $$
 \begin{equation} \varepsilon_{ijk} = \begin{cases} +1 &\text{if} \,\, ijk
@@ -354,7 +354,7 @@ $$
 $$
 
 <p>
-Using the Levi-Civita symbol the cross product may be written with index
+Using the Levi-Civita symbol the cross product may be written with basis vector
 notation as
 
 $$
@@ -362,7 +362,8 @@ $$
 $$
 
 <p>
-The final \( \bs{i}_i \) is redundant with index notation, where it is written as
+The final \( \bs{i}_i \) is redundant with index notation, where it is written
+simply as
 
 $$
 a_i = \varepsilon_{ijk} u_j v_k, 
@@ -376,7 +377,7 @@ where \( i \) is the only free index.
 <p>
 The outer product (also called dyadic or tensor product) between vectors
 \( \bs{u} \) and \( \bs{v} \) creates a second-order tensor (or a dyadic) \( \bs{P} \), and
-is denoted using a wide range of different vector or index notations
+is denoted using a wide range of different notations
 
 $$
 \begin{align} 
@@ -403,6 +404,13 @@ P_{ij} = \begin{pmatrix} P_{11} & P_{12} & P_{13} \\ P_{21}
 \label{_auto17}
 \end{equation} 
 $$
+
+<p>
+But note that for basis vector notation \eqref{eq:outer4} the important matter
+for the location is the order of the outer product between basis vectors. Since
+\( \bs{i}_i \) is first, this means that index \( i \) is used to describe the rows, and
+since \( \bs{i}_j \) is second, this means that index \( j \) is used to describe
+coloumns.
 
 <h2 id="___sec5">Operations that require derivatives </h2>
 
@@ -569,7 +577,7 @@ d\bs{u} = \text{grad} \, \bs{u} \cdot \boldsymbol{dx},
 $$
 
 <p>
-then the spatial derivative must be represented in second index (the columns) of the tensor,
+then the spatial derivative must be represented in the second index (the columns) of the tensor,
 and we get after applying \eqref{eq:nabla_grad} 
 
 $$
