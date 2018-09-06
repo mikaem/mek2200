@@ -146,7 +146,7 @@ $$
 <center><b>Department of Mathematics, University of Oslo.</b></center>
 <br>
 <p>
-<center><h4>Sep 15, 2017</h4></center> <!-- date -->
+<center><h4>Aug 22, 2018</h4></center> <!-- date -->
 <br>
 <p>
 <b>Summary.</b> <p>
@@ -206,7 +206,10 @@ where \( (u_1, u_2, u_3) \) are the three components of the vector \( \boldsymbo
 in the coordinate system that is in use. The components can always be found from
 
 $$
+\begin{equation}
 u_i = \bs{u} \cdot \bs{i}_i. 
+\label{_auto1}
+\end{equation}
 $$
 
 <p>
@@ -229,8 +232,9 @@ basis vector form are rather long, though, and this has motivated a simplified v
 using the <em>summation convention</em>
 
 $$
-\begin{equation} \boldsymbol{u} = u_i \boldsymbol{i}_i.  
-\label{_auto1}
+\begin{equation} 
+\boldsymbol{u} = u_i \boldsymbol{i}_i.  
+\label{_auto2}
 \end{equation} 
 $$
 
@@ -270,7 +274,7 @@ $$
   1 \quad \text{if } i = j \\
   0 \quad \text{if } i \ne j
  \end{cases}
-\label{_auto2}
+\label{_auto3}
 \end{equation}
 $$
 
@@ -292,11 +296,11 @@ equals a scalar (\( \alpha \)) and is given in vector notation as
 
 $$
 \begin{align} \alpha &= \boldsymbol{u} \cdot \boldsymbol{v}, 
-\label{_auto3}\\  
+\label{_auto4}\\  
 &= (u_1, u_2, u_3) \cdot (v_1, v_2, v_3), 
-\label{_auto4}\\ 
+\label{_auto5}\\ 
 &= u_1v_1 + u_2 v_2 + u_3v_3.  
-\label{_auto5}
+\label{_auto6}
 \end{align} 
 $$
 
@@ -304,7 +308,7 @@ $$
 With index notation we obtain the same result simply by writing 
 $$
 \begin{equation} \alpha = u_i v_i.  
-\label{_auto6}
+\label{_auto7}
 \end{equation} 
 $$
 
@@ -314,11 +318,11 @@ To show that this agrees with basis vector notation, we get
 $$
 \begin{align} \alpha &= \sum_{i=1}^3 u_i\boldsymbol{i}_i \cdot \sum_{j=1}^3
 v_j \boldsymbol{i}_j, 
-\label{_auto7}\\ 
-&= \sum_{i=1}^3\sum_{j=1}^3 u_iv_j \boldsymbol{i}_i \cdot \boldsymbol{i}_j,  
 \label{_auto8}\\ 
+&= \sum_{i=1}^3\sum_{j=1}^3 u_iv_j \boldsymbol{i}_i \cdot \boldsymbol{i}_j,  
+\label{_auto9}\\ 
 &=  u_1v_1 + u_2 v_2 + u_3v_3.
-\label{_auto9}
+\label{_auto10}
 \end{align} 
 $$
 
@@ -336,7 +340,7 @@ new vector \( \boldsymbol{a} \) (it is actually a <a href="https://en.wikipedia.
 
 $$
 \begin{equation} \boldsymbol{a} = \boldsymbol{u} \times \boldsymbol{v}.
-\label{_auto10}
+\label{_auto11}
 \end{equation} 
 $$
 
@@ -361,7 +365,7 @@ $$
 \begin{equation} \boldsymbol{u} \times \boldsymbol{v} = \lVert
 \boldsymbol{u}\rVert \, \lVert \boldsymbol{v} \rVert \, \sin (\theta) \,
 \boldsymbol{n}, 
-\label{_auto11}
+\label{_auto12}
 \end{equation} 
 $$
 
@@ -377,7 +381,7 @@ $$
 \begin{equation} \boldsymbol{u} \times \boldsymbol{v} = \det \begin{vmatrix}
 \boldsymbol{i}_1 & \boldsymbol{i}_2 & \boldsymbol{i}_3 \\ u_1 & u_2 & u_3 \\ v_1
 & v_2 & v_3 \end{vmatrix} 
-\label{_auto12}
+\label{_auto13}
 \end{equation} 
 $$
 
@@ -388,7 +392,7 @@ $$
 \begin{equation} \varepsilon_{ijk} = \begin{cases} +1 &\text{if} \,\, ijk
 \,\, \text{is in the sequence } 123123, \\ -1 &\text{if} \,\, ijk \,\,  \text{is
 in the sequence } 321321, \\ 0 &\text{otherwise.} \end{cases} 
-\label{_auto13}
+\label{_auto14}
 \end{equation} 
 $$
 
@@ -400,7 +404,7 @@ isotropic tensor is the second-order Kronecker delta
 $$
 \begin{equation} \delta_{ij} = \begin{cases} 1 \quad &\text{if } i=j \\ 0
 \quad &\text{otherwise}.  \end{cases} 
-\label{_auto14}
+\label{_auto15}
 \end{equation} 
 $$
 
@@ -409,7 +413,10 @@ Using the Levi-Civita symbol the cross product may be written with basis vector
 notation as
 
 $$
+\begin{equation}
 \bs{a} = \varepsilon_{ijk} u_j v_k \bs{i}_i.  
+\label{_auto16}
+\end{equation}
 $$
 
 <p>
@@ -417,7 +424,10 @@ The final \( \bs{i}_i \) is redundant with index notation, where it is written
 simply as
 
 $$
+\begin{equation}
 a_i = \varepsilon_{ijk} u_j v_k, 
+\label{_auto17}
+\end{equation}
 $$
 
 <p>
@@ -437,8 +447,8 @@ $$
 \bs{P} &= u_iv_j\bs{i}_i\bs{i}_j  \label{eq:outer3}\\ \bs{P} &= u_iv_j\bs{i}_i
 \otimes \bs{i}_j \label{eq:outer4} \\
 P_{ij} &= u_iv_j 
-\label{_auto15}\\ 
-\label{_auto16}
+\label{_auto18}\\ 
+\label{_auto19}
 \end{align} 
 $$
 
@@ -452,7 +462,7 @@ $$
 \begin{equation} 
 P_{ij} = \begin{pmatrix} P_{11} & P_{12} & P_{13} \\ P_{21}
 & P_{22} & P_{23} \\ P_{31} & P_{32} & P_{33} \end{pmatrix} 
-\label{_auto17}
+\label{_auto20}
 \end{equation} 
 $$
 
@@ -485,10 +495,10 @@ In a Cartesian coordinate system the gradient can be written as
 $$
 \begin{align}
 \text{grad}\, f &= \nabla f , 
-\label{_auto18}\\ 
+\label{_auto21}\\ 
 \text{grad}\, f &= \bs{i}_i \frac{\partial f}{\partial x_i}, \label{eq:gradf_2}\\
 (\text{grad}\, f)_i &= \frac{\partial f}{\partial x_i}. \label{eq:gradf_3} \\
-\label{_auto19}
+\label{_auto22}
 \end{align}
 $$
 
@@ -505,13 +515,13 @@ With these notations for the gradient we have for Eq. \eqref{eq:gradf}
 $$
 \begin{align}
 df &= \nabla f \cdot \bs{dx}, 
-\label{_auto20}\\ 
+\label{_auto23}\\ 
 df &= \frac{\partial f}{\partial x_i} dx_i, 
-\label{_auto21}\\
+\label{_auto24}\\
 df &=  \bs{i}_i \frac{\partial f}{\partial x_i} \cdot \bs{i}_j dx_j =
 \frac{\partial f}{\partial x_i}dx_j \bs{i}_i  \cdot \bs{i}_j = \frac{\partial
 f}{\partial x_i} dx_i.
-\label{_auto22}
+\label{_auto25}
 \end{align}
 $$
 
@@ -591,7 +601,7 @@ $$
 \begin{equation}
  \nabla \cdot \bs{u}, \quad \frac{\partial u_i}{\partial x_i}, \quad \bs{i}_i
 \frac{\partial }{\partial x_i} \cdot u_j \bs{i}_j.
-\label{_auto23}
+\label{_auto26}
 \end{equation}
 $$
 
@@ -604,7 +614,7 @@ and in general
 $$
 \begin{equation}
 P_{ij} \ne P_{ji} \quad \text{or} \quad \bs{P} \ne \bs{P}^T,
-\label{_auto24}
+\label{_auto27}
 \end{equation}
 $$
 
@@ -613,7 +623,7 @@ for a non-symmetric tensor. Perhaps more evident
 $$
 \begin{equation}
 \frac{\partial u_i}{\partial x_j} \ne \frac{\partial u_j}{\partial x_i}.
-\label{_auto25}
+\label{_auto28}
 \end{equation}
 $$
 
@@ -635,7 +645,7 @@ $$
 \begin{align}
 \text{grad}\, \bs{u} &= \frac{\partial u_i \bs{i}_i}{\partial x_j} \otimes
 \bs{i}_j, 
-\label{_auto26}\\
+\label{_auto29}\\
   &=  \frac{\partial u_i}{\partial x_j} \bs{i}_i \otimes \bs{i}_j,
 \label{eq:gradu_2}
 \end{align}
@@ -646,7 +656,7 @@ or similarily
 $$
 \begin{equation}
 \text{grad}\, \bs{u} = \frac{\partial u_i}{\partial x_j}.
-\label{_auto27}
+\label{_auto30}
 \end{equation}
 $$
 
@@ -654,7 +664,10 @@ $$
 Now, some authors like to identify \( \nabla \) with this gradient operator, such that 
 
 $$
+\begin{equation}
 \text{grad} \, \bs{u} = \nabla \bs{u} = \frac{\partial u_i}{\partial x_j}.
+\label{_auto31}
+\end{equation}
 $$
 
 <p>
@@ -666,7 +679,7 @@ operator \( \nabla \) and the vector \( \bs{u} \) is
 $$
 \begin{align}
   \nabla \otimes \bs{u}  &= \bs{i}_i \frac{\partial }{\partial x_i} \otimes u_j \bs{i}_j 
-\label{_auto28}\\
+\label{_auto32}\\
    & = \frac{\partial u_j}{\partial x_i} \bs{i}_i \otimes \bs{i}_j,
 \label{eq:graduT}
 \end{align}
@@ -678,7 +691,7 @@ also be written as
 $$
 \begin{equation}
  \nabla \bs{u} \quad \text{or} \quad \frac{\partial u_j}{\partial x_i},
-\label{_auto29}
+\label{_auto33}
 \end{equation} 
 $$
 
@@ -695,7 +708,7 @@ vector
 $$
 \begin{equation}
 u_j \frac{\partial u_i}{\partial x_j}.
-\label{_auto30}
+\label{_auto34}
 \end{equation}
 $$
 
@@ -706,7 +719,7 @@ Here, if we accept the definition with \( \nabla \bs{u} =
 $$
 \begin{equation}
 \bs{u} \cdot \nabla \bs{u}.
-\label{_auto31}
+\label{_auto35}
 \end{equation}
 $$
 
@@ -716,7 +729,7 @@ then one must write
 $$
 \begin{equation}
  \nabla \bs{u} \cdot \bs{u},
-\label{_auto32}
+\label{_auto36}
 \end{equation}
 $$
 
@@ -730,7 +743,7 @@ One common way to avoid any confusion is to define the convection operator
 $$
 \begin{equation}
 \bs{u} \cdot \nabla = u_i \frac{\partial }{\partial x_i},
-\label{_auto33}
+\label{_auto37}
 \end{equation}
 $$
 
@@ -740,7 +753,7 @@ and then write the nonlinear convection term as
 $$
 \begin{equation}
 (\bs{u} \cdot \nabla) \,\bs{u}.
-\label{_auto34}
+\label{_auto38}
 \end{equation}
 $$
 
@@ -765,7 +778,7 @@ then we have that the dot product of the nabla vector and \( P \)
 $$
 \begin{equation}
 \nabla \cdot \bs{P} = \frac{\partial P_{ij}}{\partial x_i},
-\label{_auto35}
+\label{_auto39}
 \end{equation}
 $$
 
@@ -778,9 +791,9 @@ $$
 \begin{align}
 \nabla \cdot \bs{P} &= \frac{\partial P_{ij} \bs{i}_i \otimes \bs{i}_j}{\partial
 x_k} \cdot \bs{i}_k, 
-\label{_auto36}\\
+\label{_auto40}\\
  &= \frac{\partial P_{ij} }{\partial x_j}.
-\label{_auto37}
+\label{_auto41}
 \end{align}
 $$
 
@@ -793,7 +806,7 @@ which one is being used. However, only for the latter definition does \( \nabla
 
 </div>  <!-- end container -->
 <!-- include javascript, jQuery *first* -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 <!-- Bootstrap footer
