@@ -122,13 +122,12 @@ the coordinate system.
 <p>
 Introducing a coordinate system through unit vectors \( \boldsymbol{i}_1, \boldsymbol{i}_2 \) and
 \( \boldsymbol{i}_3 \), a vector field may be represented as
-$$
+
 \begin{equation} 
 \boldsymbol{u} = u_1 \boldsymbol{i}_1 + u_2\boldsymbol{i}_2 + u_3
 \boldsymbol{i}_3 = \sum_{i=1}^3 u_i \boldsymbol{i}_i.  
-\end{equation} 
 \label{eq:u_vec2}
-$$
+\end{equation} 
 
 <p>
 A Cartesian coordinate system is often define with unit vectors \( \bs{i}_1 = (1, 0, 0), \bs{i}_1=(0, 1, 0) \) and
@@ -138,23 +137,20 @@ system, then it is safe to assume that this is the coordinate system in use.
 <p>
 A vector is sometimes denoted simply as
 
-$$
 \begin{equation} 
 \boldsymbol{u} = (u_1, u_2, u_3), 
-\end{equation} 
 \label{eq:u_vec}
-$$
+\end{equation} 
+
 
 <p>
 where \( (u_1, u_2, u_3) \) are the three components of the vector \( \boldsymbol{u} \)
 in the coordinate system that is in use. The components can always be found from
 
-$$
 \begin{equation}
 u_i = \bs{u} \cdot \bs{i}_i. 
 \label{_auto1}
 \end{equation}
-$$
 
 <p>
 We note that \( \boldsymbol{u} \), with a boldface font, is not the only way to
@@ -175,12 +171,10 @@ notation is often referred to as component, or basis vector form. The expression
 basis vector form are rather long, though, and this has motivated a simplified version that is
 using the <em>summation convention</em>
 
-$$
 \begin{equation} 
 \boldsymbol{u} = u_i \boldsymbol{i}_i.  
 \label{_auto2}
 \end{equation} 
-$$
 
 <p>
 Here the two repeated indices \( i \) indicate that the expression must be summed over
@@ -196,11 +190,9 @@ vector component, and we use, as before, simply \( u_i \) to refer to <em>compon
 vector \( \boldsymbol{u} \). The index form is used with the summation convention,
 such that, for example, the dot product becomes
 
-$$
 \begin{equation*}
 \bs{u} \cdot \bs{v} = u_i v_i.
 \end{equation*}
-$$
 
 <p>
 Papers or books that are primarily using index
@@ -212,7 +204,6 @@ Note also that the index notation without explicit use of basis vectors is only 
 for a Cartesian coordinate system. The Cartesian unit or basis vectors
 obviously satisfy
 
-$$
 \begin{equation}
 \bs{i}_i \cdot \bs{i}_j = \begin{cases} 
   1 \quad \text{if } i = j \\
@@ -220,7 +211,6 @@ $$
  \end{cases}
 \label{_auto3}
 \end{equation}
-$$
 
 <p>
 and are for this reason referred to as an orthonormal basis.
@@ -238,7 +228,6 @@ written with different types of notation.
 The inner product between two vectors \( \boldsymbol{u} \) and \( \boldsymbol{v} \)
 equals a scalar (\( \alpha \)) and is given in vector notation as 
 
-$$
 \begin{align} \alpha &= \boldsymbol{u} \cdot \boldsymbol{v}, 
 \label{_auto4}\\  
 &= (u_1, u_2, u_3) \cdot (v_1, v_2, v_3), 
@@ -246,20 +235,17 @@ $$
 &= u_1v_1 + u_2 v_2 + u_3v_3.  
 \label{_auto6}
 \end{align} 
-$$
 
 <p>
 With index notation we obtain the same result simply by writing 
-$$
+
 \begin{equation} \alpha = u_i v_i.  
 \label{_auto7}
 \end{equation} 
-$$
 
 <p>
 To show that this agrees with basis vector notation, we get
 
-$$
 \begin{align} \alpha &= \sum_{i=1}^3 u_i\boldsymbol{i}_i \cdot \sum_{j=1}^3
 v_j \boldsymbol{i}_j, 
 \label{_auto8}\\ 
@@ -268,7 +254,6 @@ v_j \boldsymbol{i}_j,
 &=  u_1v_1 + u_2 v_2 + u_3v_3.
 \label{_auto10}
 \end{align} 
-$$
 
 <p>
 Here the last equality follows from retaining only the non-zero terms of the
@@ -282,11 +267,9 @@ is zero if \( i \ne j \).
 The cross product between two vectors \( \boldsymbol{u} \) and \( \boldsymbol{v} \) is a
 new vector \( \boldsymbol{a} \) (it is actually a <a href="https://en.wikipedia.org/wiki/Pseudovector" target="_self">pseudovector</a>)
 
-$$
 \begin{equation} \boldsymbol{a} = \boldsymbol{u} \times \boldsymbol{v}.
 \label{_auto11}
 \end{equation} 
-$$
 
 <p>
 The cross product between \( \boldsymbol{u} \) and \( \boldsymbol{v} \) is a vector with
@@ -305,13 +288,11 @@ are illustrated in the figure below
 <p>
 The cross product is defined as
 
-$$
 \begin{equation} \boldsymbol{u} \times \boldsymbol{v} = \lVert
 \boldsymbol{u}\rVert \, \lVert \boldsymbol{v} \rVert \, \sin (\theta) \,
 \boldsymbol{n}, 
 \label{_auto12}
 \end{equation} 
-$$
 
 where \( \lVert \boldsymbol{u} \rVert \)
 represents the magnitude of \( \boldsymbol{u} \) and \( \theta \) is the angle between
@@ -321,58 +302,48 @@ normal vector to the same plane, in the direction determined by the <em>handedne
 <p>
 The cross product is often defined as the determinant of the matrix
 
-$$
 \begin{equation} \boldsymbol{u} \times \boldsymbol{v} = \det \begin{vmatrix}
 \boldsymbol{i}_1 & \boldsymbol{i}_2 & \boldsymbol{i}_3 \\ u_1 & u_2 & u_3 \\ v_1
 & v_2 & v_3 \end{vmatrix} 
 \label{_auto13}
 \end{equation} 
-$$
 
 <p>
 With index or basis vector notation the cross product may be defined using the <a href="https://en.wikipedia.org/wiki/Levi-Civita_symbol" target="_self">Levi-Civita</a> symbol
 
-$$
 \begin{equation} \varepsilon_{ijk} = \begin{cases} +1 &\text{if} \,\, ijk
 \,\, \text{is in the sequence } 123123, \\ -1 &\text{if} \,\, ijk \,\,  \text{is
 in the sequence } 321321, \\ 0 &\text{otherwise.} \end{cases} 
 \label{_auto14}
 \end{equation} 
-$$
 
 <p>
 The Levi-Civita symbol is a third-order tensor and also an isotropic tensor,
 meaning that it has the same value in any coordinate system. Another well-known
 isotropic tensor is the second-order Kronecker delta
 
-$$
 \begin{equation} \delta_{ij} = \begin{cases} 1 \quad &\text{if } i=j \\ 0
 \quad &\text{otherwise}.  \end{cases} 
 \label{_auto15}
 \end{equation} 
-$$
 
 <p>
 Using the Levi-Civita symbol the cross product may be written with basis vector
 notation as
 
-$$
 \begin{equation}
 \bs{a} = \varepsilon_{ijk} u_j v_k \bs{i}_i.  
 \label{_auto16}
 \end{equation}
-$$
 
 <p>
 The final \( \bs{i}_i \) is redundant with index notation, where it is written
 simply as
 
-$$
 \begin{equation}
 a_i = \varepsilon_{ijk} u_j v_k, 
 \label{_auto17}
 \end{equation}
-$$
 
 <p>
 where \( i \) is the only free index.
@@ -384,7 +355,6 @@ The outer product (also called dyadic or tensor product) between vectors
 \( \bs{u} \) and \( \bs{v} \) creates a second-order tensor (or a dyadic) \( \bs{P} \), and
 is denoted using a wide range of different notations
 
-$$
 \begin{align} 
 \bs{P} &= \bs{u} \otimes \bs{v} \label{eq:outer1}\\ \bs{P} &= \bs{u} \bs{v}
 \label{eq:outer2}\\
@@ -394,7 +364,6 @@ P_{ij} &= u_iv_j
 \label{_auto18}\\ 
 \label{_auto19}
 \end{align} 
-$$
 
 <p>
 Evidently, the simplest approach is to take the lack of a dot as representing an
@@ -402,13 +371,11 @@ outer product, as seen in \eqref{eq:outer2}. The indices and unit vectors indica
 a matrix. The first and second index, i.e., \( i \) and \( j \), represent the matrix's
 rows and columns, respectively: 
 
-$$
 \begin{equation} 
 P_{ij} = \begin{pmatrix} P_{11} & P_{12} & P_{13} \\ P_{21}
 & P_{22} & P_{23} \\ P_{31} & P_{32} & P_{33} \end{pmatrix} 
 \label{_auto20}
 \end{equation} 
-$$
 
 <p>
 But note that for basis vector notation \eqref{eq:outer4} the important matter
@@ -427,16 +394,13 @@ tensor. When applied to a zero'th-order scalar, the result is a vector of order
 one. We define the gradient by considering infinitesimal changes in the field
 \( f \) along a direction vector \( \boldsymbol{dx} \)
 
-$$
 \begin{equation} 
 df = \text{grad} \, f \cdot \boldsymbol{dx}. \label{eq:gradf} 
 \end{equation} 
-$$
 
 <p>
 In a Cartesian coordinate system the gradient can be written as
 
-$$
 \begin{align}
 \text{grad}\, f &= \nabla f , 
 \label{_auto21}\\ 
@@ -444,7 +408,6 @@ $$
 (\text{grad}\, f)_i &= \frac{\partial f}{\partial x_i}. \label{eq:gradf_3} \\
 \label{_auto22}
 \end{align}
-$$
 
 Note that out of these three different ways of writing the gradient of a scalar,
 only the first, \( \text{grad} \, f = \nabla f \), is valid for a general coordinate
@@ -456,7 +419,6 @@ never can be used for any other coordinate system than a Cartesian.
 <p>
 With these notations for the gradient we have for Eq. \eqref{eq:gradf}
 
-$$
 \begin{align}
 df &= \nabla f \cdot \bs{dx}, 
 \label{_auto23}\\ 
@@ -467,7 +429,6 @@ df &=  \bs{i}_i \frac{\partial f}{\partial x_i} \cdot \bs{i}_j dx_j =
 f}{\partial x_i} dx_i.
 \label{_auto25}
 \end{align}
-$$
 
 <h3 id="___sec7">The \( \nabla \) operator </h3>
 
@@ -487,23 +448,20 @@ different approaches are both the same.
 <p>
 When the nabla operator is interpreted as the vector, we can write it as
 
-$$
 \begin{equation}
 \nabla = \bs{i}_i\frac{\partial }{\partial x_i}, \label{eq:nabla_1}
 \end{equation}
-$$
 
 but note that this is only valid for Cartesian coordinate systems.
 
 <p>
 By defining nabla as an operator, we apply it as \eqref{eq:nabla_1} to scalars,
 but as
-$$
+
 \begin{equation}
 \nabla = \frac{\partial (\cdot)}{\partial x_i} \otimes \bs{i}_i,
 \label{eq:nabla_grad}
 \end{equation}
-$$
 
 when applied to higher order tensors \( (\cdot) \). With this latter approach, the
 spatial derivative becomes the <em>last</em> index in the resulting tensor, whereas with the
@@ -530,24 +488,20 @@ the outer product \( \bs{i}_j \otimes \bs{i}_i \).
 The divergence of a vector field \( \bs{u} \) is defined as the surface integral of
 \( \bs{u} \cdot \bs{n} \) over a surface surrounding a point P
 
-$$
 \begin{equation}
 \text{div}\, \bs{u} = \lim_{\delta V \rightarrow 0} \frac{1}{\delta
 V}\oint_{\delta S} \bs{u} \cdot \bs{n} ds, \label{eq:divu}
 \end{equation}
-$$
 
 where \( \delta V \) is a small volume enclosing P, with surface \( \delta S \). In
 Cartesian coordinates this corresponds to the dot product between the vector
 nabla and the vector \( \bs{u} \), which can be written as either one of 
 
-$$
 \begin{equation}
  \nabla \cdot \bs{u}, \quad \frac{\partial u_i}{\partial x_i}, \quad \bs{i}_i
 \frac{\partial }{\partial x_i} \cdot u_j \bs{i}_j.
 \label{_auto26}
 \end{equation}
-$$
 
 <h3 id="sec:grad_vector">The gradient of a vector</h3>
 
@@ -555,37 +509,30 @@ The gradient of a vector is a second order tensor. This is where much
 confusion arise in the literature, because a second order tensor \( \bs{P} \) can be transposed,
 and in general
 
-$$
 \begin{equation}
 P_{ij} \ne P_{ji} \quad \text{or} \quad \bs{P} \ne \bs{P}^T,
 \label{_auto27}
 \end{equation}
-$$
 
 for a non-symmetric tensor. Perhaps more evident
 
-$$
 \begin{equation}
 \frac{\partial u_i}{\partial x_j} \ne \frac{\partial u_j}{\partial x_i}.
 \label{_auto28}
 \end{equation}
-$$
 
 <p>
 If we define the gradient of a vector as right multiplication
 
-$$
 \begin{equation} 
 \label{eq:gradu}
 d\bs{u} = \text{grad} \, \bs{u} \cdot \boldsymbol{dx},
 \end{equation} 
-$$
 
 <p>
 then the spatial derivative must be represented in the second index (the columns) of the tensor,
 and we get after applying \eqref{eq:nabla_grad} 
 
-$$
 \begin{align}
 \text{grad}\, \bs{u} &= \frac{\partial u_i \bs{i}_i}{\partial x_j} \otimes
 \bs{i}_j, 
@@ -593,26 +540,22 @@ $$
   &=  \frac{\partial u_i}{\partial x_j} \bs{i}_i \otimes \bs{i}_j,
 \label{eq:gradu_2}
 \end{align}
-$$
 
 <p>
 or similarily
-$$
+
 \begin{equation}
 \text{grad}\, \bs{u} = \frac{\partial u_i}{\partial x_j}.
 \label{_auto30}
 \end{equation}
-$$
 
 <p>
 Now, some authors like to identify \( \nabla \) with this gradient operator, such that 
 
-$$
 \begin{equation}
 \text{grad} \, \bs{u} = \nabla \bs{u} = \frac{\partial u_i}{\partial x_j}.
 \label{_auto31}
 \end{equation}
-$$
 
 <p>
 However, some authors do not identify the gradient to be the definition in
@@ -620,24 +563,20 @@ However, some authors do not identify the gradient to be the definition in
 In this case the outer product of the nabla
 operator \( \nabla \) and the vector \( \bs{u} \) is
 
-$$
 \begin{align}
   \nabla \otimes \bs{u}  &= \bs{i}_i \frac{\partial }{\partial x_i} \otimes u_j \bs{i}_j 
 \label{_auto32}\\
    & = \frac{\partial u_j}{\partial x_i} \bs{i}_i \otimes \bs{i}_j,
 \label{eq:graduT}
 \end{align}
-$$
 
 which is the transpose of Eq. \eqref{eq:gradu_2}. Note that Eq. \eqref{eq:graduT}  may
 also be written as
 
-$$
 \begin{equation}
  \nabla \bs{u} \quad \text{or} \quad \frac{\partial u_j}{\partial x_i},
 \label{_auto33}
 \end{equation} 
-$$
 
 <p>
 and there is no way of knowing whether \( \nabla \bs{u} \) represents \( \partial u_i /\partial
@@ -649,33 +588,28 @@ made clear which definitions are being used, then there can be no confusion.
 One term that is often incorrect in academic papers is the nonlinear convection
 vector
 
-$$
 \begin{equation}
 u_j \frac{\partial u_i}{\partial x_j}.
 \label{_auto34}
 \end{equation}
-$$
 
 <p>
 Here, if we accept the definition with \( \nabla \bs{u} =
 \partial u_j / \partial x_i \), then we can write this as
 
-$$
 \begin{equation}
 \bs{u} \cdot \nabla \bs{u}.
 \label{_auto35}
 \end{equation}
-$$
 
 <p>
 However, if we choose to use the definition \( \nabla \bs{u} = \partial u_i / \partial x_j \),
 then one must write
-$$
+
 \begin{equation}
  \nabla \bs{u} \cdot \bs{u},
 \label{_auto36}
 \end{equation}
-$$
 
 <p>
 which is very rarely seen in any academic papers or books.
@@ -684,22 +618,18 @@ which is very rarely seen in any academic papers or books.
 One common way to avoid any confusion is to define the convection operator
 \( \bs{u} \cdot \nabla \) 
 
-$$
 \begin{equation}
 \bs{u} \cdot \nabla = u_i \frac{\partial }{\partial x_i},
 \label{_auto37}
 \end{equation}
-$$
 
 <p>
 and then write the nonlinear convection term as
 
-$$
 \begin{equation}
 (\bs{u} \cdot \nabla) \,\bs{u}.
 \label{_auto38}
 \end{equation}
-$$
 
 <p>
 This is the preferred notation used by the current author.
@@ -709,29 +639,24 @@ This is the preferred notation used by the current author.
 Similarly to the gradient, there may be confusion when taking the divergence of
 a tensor. According to the definition in Eq. \eqref{eq:divu}, we have
 
-$$
 \begin{equation}
 \text{div}\, \bs{P} = \frac{\partial P_{ij}}{\partial x_j}. \label{eq:divP}
 \end{equation}
-$$
 
 <p>
 However, if we identify the nabla operator as a vector and not an operator,
 then we have that the dot product of the nabla vector and \( P \)
 
-$$
 \begin{equation}
 \nabla \cdot \bs{P} = \frac{\partial P_{ij}}{\partial x_i},
 \label{_auto39}
 \end{equation}
-$$
 
 <p>
 and this is different from Eq. \eqref{eq:divP} since summation is over the first
 index of \( \bs{P} \). On the other hand, if \( \nabla \cdot \) is seen as an operator acting
 on \( \bs{P} \) one may get
 
-$$
 \begin{align}
 \nabla \cdot \bs{P} &= \frac{\partial P_{ij} \bs{i}_i \otimes \bs{i}_j}{\partial
 x_k} \cdot \bs{i}_k, 
@@ -739,7 +664,6 @@ x_k} \cdot \bs{i}_k,
  &= \frac{\partial P_{ij} }{\partial x_j}.
 \label{_auto41}
 \end{align}
-$$
 
 <p>
 Both definitions are equally valid and ok, as long as it is made perfectly clear
